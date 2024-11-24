@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="images/png" href="images/music-player.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bs-light">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" id="sidebarToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ms-3" href="index.html">
+                    <img src="images/music-player.png" alt="Logo" width="40" height="40">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-light sidebar">
+        <ul class="list-unstyled">
+
+
+            <!-- Dropdown untuk Genres -->
+            <li>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#submenuGenres" aria-expanded="false" aria-controls="submenuGenres">Music</a>
+                <ul class="submenu collapse list-unstyled" id="submenuGenres">
+                    <li><a href="Western.html">Western Music</a></li>
+                    <li><a href="IndoMusic.html">Music Indonesia</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+
+
+    <!-- Header Banner -->
+    <section class="cover">
+        <div class="cover-container">
+            <img src="images/neck.jpg" alt="Cover Image" class="cover-image">
+            <div class="cover-text">
+                <h1>Dengarkan Music Yang Kamu Sukai!</h1>
+                <p>Jelajahi dunia suara. Dari lagu-lagu klasik yang abadi hingga hits terbaru, temukan musik yang berbicara pada jiwamu.</p>
+                <a href="" class="btn-ayoo">Lets GO!</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Genres -->
+    <!--About -->
+
+    <!-- Contact-->
+    <!--settings -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Irsyad Hakki. All Rights Reserved.</p>
+            <p>Designed with <i class="bi bi-heart-fill text-danger"></i> by Irsyad Hakki</p>
+        </div>
+    </footer>
+
+    <!-- Script imports -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

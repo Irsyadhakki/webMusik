@@ -1,0 +1,227 @@
+    .navbar {
+        z-index: 1050;
+        position: fixed;
+    }
+    /* Styling untuk sidebar */
+    
+    .sidebar {
+        background-color: #27005D;
+        color: white;
+        height: 100%;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    /* Menampilkan sidebar saat aktif */
+    
+    .sidebar-active {
+        left: 0;
+        /* Tampilkan sidebar */
+    }
+    /* Styling untuk link di dalam sidebar */
+    
+    .sidebar ul li a {
+        margin-top: 3.7rem;
+        color: #27005D;
+        text-decoration: none;
+        border-radius: 10px;
+        display: block;
+        padding: 10px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    /* Styling saat hover */
+    
+    .sidebar ul li a:hover {
+        background-color: #000000;
+        color: #E4F1FF;
+        box-shadow: 0 0 10px #19002b, 0 0 20px #49007e;
+    }
+    /* Styling untuk submenu */
+    
+    .submenu {
+        padding-left: 20px;
+    }
+    /* Menampilkan submenu saat aktif */
+    
+    .submenu.collapse.show {
+        display: block;
+    }
+    /* Styling untuk Section Western Music */
+    
+    .western-music-section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: #000000d1;
+    }
+    
+    .western-music-section video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 1;
+        color: white;
+        padding: 50px 0;
+    }
+    
+    .western-music-section h2 {
+        font-size: 2.5em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    /* Styling untuk Audio Card */
+    
+    .audio-card {
+        max-width: 400px;
+        margin: 20px auto;
+        border: 1px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        animation: blinkShadow 1.5s infinite;
+    }
+    
+    @keyframes blinkShadow {
+        0% {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            /* Box-shadow ringan */
+        }
+        50% {
+            box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+            /* Box-shadow lebih terang */
+        }
+        100% {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            /* Kembali ke box-shadow awal */
+        }
+    }
+    
+    .audio-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .card-body {
+        padding: 10px;
+        background-color: #ffffff;
+    }
+    
+    .card-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .card-text {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+        text-align: left;
+    }
+    
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        /* Jarak ikon */
+        margin-top: 15px;
+    }
+    
+    .controls img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    /* Styling Modal */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 60px;
+    }
+    
+    .modal-content {
+        background-color: rgb(208, 6, 188);
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 50%;
+        height: 70%;
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+    
+    .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .lyric-container {
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: 1.6;
+        overflow-y: auto;
+        height: 100%;
+    }
+    
+    .lyric-line {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

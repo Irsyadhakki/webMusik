@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="images/png" href="images/music-player.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bs-light">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" id="sidebarToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ms-3" href="index.html">
+                    <img src="images/music-player.png" alt="Logo" width="40" height="40">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-light sidebar">
+        <ul class="list-unstyled">
+
+
+            <!-- Dropdown untuk Genres -->
+            <li>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#submenuGenres" aria-expanded="false" aria-controls="submenuGenres">Music</a>
+                <ul class="submenu collapse list-unstyled" id="submenuGenres">
+                    <li><a href="Western.html">Western Music</a></li>
+                    <li><a href="IndoMusic.html">Music Indonesia</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+
+
+
+    <!-- Genres -->
+    <!--About -->
+
+
+
+    <!-- Contact-->
+    <section id="contact" class="py-5 bg-light text-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="section-title text-center">Hubungi Saya</h2>
+                <!-- Biodata Section (Left) -->
+
+                <div class="col-lg-4 text-left mb-4">
+                    <div class="bio-section text-center p-4 shadow rounded">
+                        <div class="mb-3">
+                            <img src="images/WhatsApp Image 2024-11-24 at 18.45.09.jpeg" alt="Biodata Foto" class="img-fluid rounded-circle shadow-lg bio-img">
+                        </div>
+                        <h3 class="text-dark font-weight-bold mb-2">Irsyad Hakki</h3>
+                        <p class="lead mb-4 text-muted">Teruslah Bernafas</p>
+                        <ul class="list-unstyled text-left">
+                            <li><strong>Alamat:</strong> Mataram</li>
+                            <li><strong>Telepon:</strong> +6283112135166</li>
+                            <li><strong>Hobi:</strong>-</li>
+                        </ul>
+                        <div class="social-icons mb-3">
+                            <a href="#" target="_blank">
+                                <img src="images/communication.png" alt="Facebook" class="mx-3" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="https://www.instagram.com/murphysssssss/profilecard/?igsh=MmpndnlpZHQ3MTZp" target="_blank">
+                                <img src="images/social.png" alt="Instagram" class="mx-3" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="https://github.com/Irsyadhakki" target="_blank">
+                                <img src="images/github-sign.png" alt="GitHub" class="mx-3" style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Contact Form Section (Right) -->
+                <div class="col-lg-8">
+                    <form action="https://formspree.io/f/xbljaklk" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan:</label>
+                            <textarea name="message" id="message" class="form-control" placeholder="Enter your message" rows="4" required></textarea>
+                        </div>
+                        <!-- other form fields go here -->
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--settings -->
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Irsyad Hakki. All Rights Reserved.</p>
+            <p>Designed with <i class="bi bi-heart-fill text-danger"></i> by Irsyad Hakki</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
